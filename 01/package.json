@@ -1,0 +1,15 @@
+{
+  "name": "2019-nodejs-cli",
+  "version": "0.0.1",
+  "description": "Greeting CLI Application",
+  "main": "greeting.js",
+  "bin": {
+    "greeting": "greeting.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "tomof",
+  "license": "MIT"
+}
