@@ -64,7 +64,4 @@ const greeting = options.decorate ?
   `*****>>> Hello, ${options.target}! <<<*****` :
   `Hello, ${options.target}!`;
 
-console.log(greeting)
-
-// 正常終了
-process.exit(0);
+console.log(greeting);
