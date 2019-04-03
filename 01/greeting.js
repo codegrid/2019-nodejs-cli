@@ -55,7 +55,7 @@ const argOptions = args.reduce((acc, arg, i, array) => {
 // デフォルトのオプション値を上書き
 const options = Object.assign({}, defaultOptions, argOptions)
 
-if(options.target === null) {
+if(!options.target) {
   console.error('--target, -t is not specified!');
   process.exit(1); // 異常終了
 }
