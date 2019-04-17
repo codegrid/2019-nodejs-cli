@@ -10,7 +10,7 @@ const parseSessionByBrowser = require('./lib/parseSessionByBrowser');
 program
   .version(version)
   .option('-s, --src <path>', 'Path of the srouce CSV file path')
-  .option('-d, --dest [path]', 'Path of directory to write out converted json')
+  .option('-d, --dest <path>', 'Path of directory to write out converted json')
   .parse(process.argv);
 
 const srcPath = path.resolve(process.cwd(), program.src);
