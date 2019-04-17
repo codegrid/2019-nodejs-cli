@@ -10,12 +10,12 @@ const parseSessionByBrowser = require('./lib/parseSessionByBrowser');
 program
   .version(version)
   .option('-s, --src <path>', 'Path of the srouce CSV file path')
-  .option('-d, --dist [path]', 'Path of directory to write out converted json')
+  .option('-d, --dest [path]', 'Path of directory to write out converted json')
   .parse(process.argv);
 
 const srcPath = path.resolve(process.cwd(), program.src);
 const baseFileName = path.basename(program.src, '.csv');
-const distPath = path.resolve(process.cwd(), program.dist, `${baseFileName}.json`);
+const destPath = path.resolve(process.cwd(), program.dest, `${baseFileName}.json`);
 
 // CSVファイルの読み込み
 let csv;
@@ -31,7 +31,7 @@ catch(e) {
 // 解析とファイルの書き出し
 const parsedData = parseSessionByBrowser(csv);
 try {
-  fs.writeFileSync(distPath, JSON.stringify(parsedData, null, 2), 'utf-8');
+  fs.writeFileSync(destPath, JSON.stringify(parsedData, null, 2), 'utf-8');
 }
 catch(e) {
   // JSONファイル書き出し失敗時の処理
