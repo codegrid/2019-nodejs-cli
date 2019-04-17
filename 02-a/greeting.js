@@ -9,7 +9,7 @@ program
   .option('-d, --decorate', 'Decorate greeting')
   .parse(process.argv);
 
-if (typeof program.target === 'undefined') {
+if (!program.target) {
   console.error('--target, -t is not specified!');
   process.exit(1);
 }
