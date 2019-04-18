@@ -13,6 +13,12 @@ program
   .option('-d, --dest <path>', 'Path of directory to write out converted json')
   .parse(process.argv);
 
+// srcもdestもオプション指定が必須なので検証
+if (!program.src || !program.dest) {
+  console.error('-s, -src and -d, --dest are required!');
+  process.exit(1);
+}
+
 const srcPath = path.resolve(process.cwd(), program.src);
 const baseFileName = path.basename(program.src, '.csv');
 const destPath = path.resolve(process.cwd(), program.dest, `${baseFileName}.json`);
