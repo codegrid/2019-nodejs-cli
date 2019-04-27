@@ -1,0 +1,34 @@
+ブラウザ,オペレーティング システム,ユーザー,新規ユーザー,セッション,直帰率,ページ/セッション,平均セッション時間
+Chrome,Macintosh,"1,319","1,278","2,033",42.06%,3.05,0:02:04
+Chrome,Windows,"1,140","1,119","1,378",49.27%,2.4,0:01:31
+Safari,iOS,464,434,633,63.19%,1.8,0:00:58
+Chrome,Android,156,153,215,62.79%,2.31,0:01:14
+Safari,Macintosh,178,166,210,48.10%,2.07,0:01:05
+Firefox,Windows,158,154,183,46.99%,2.35,0:01:18
+Internet Explorer,Windows,151,151,171,50.29%,2.41,0:01:16
+Chrome,Linux,114,114,115,78.26%,1.49,0:00:30
+Firefox,Macintosh,84,82,100,60.00%,2.31,0:01:49
+Chrome,iOS,49,43,95,52.63%,2.12,0:01:26
+Safari (in-app),iOS,66,61,76,72.37%,1.67,0:00:39
+Edge,Windows,36,36,44,38.64%,3.27,0:04:14
+Android Webview,Android,27,27,31,67.74%,2.03,0:00:39
+Safari,Linux,22,22,22,72.73%,1.27,0:00:01
+Mozilla Compatible Agent,(not set),20,20,20,100.00%,1,0:00:00
+Sogou web spider,(not set),17,17,17,100.00%,1,0:00:00
+Firefox,Linux,11,11,12,75.00%,1.58,0:00:20
+Android Browser,Android,9,8,11,72.73%,1.27,0:00:09
+Samsung Internet,Android,5,5,5,60.00%,1.8,0:00:18
+Chrome,Chrome OS,4,4,4,50.00%,1.75,0:00:08
+Opera,Macintosh,4,4,4,100.00%,1,0:00:00
+Opera,Windows,4,4,4,75.00%,1.25,0:00:33
+Amazon Silk,Android,2,2,2,0.00%,2.5,0:00:28
+Firefox,Android,2,2,2,0.00%,2,0:00:23
+Mozilla,Linux,2,2,2,100.00%,1,0:00:00
+Chrome,FreeBSD,1,1,1,100.00%,1,0:00:00
+http:,(not set),1,1,1,100.00%,1,0:00:00
+Mozilla Compatible Agent,Windows,1,1,1,100.00%,1,0:00:00
+Opera,Android,1,1,1,100.00%,1,0:00:00
+pera,Linux,1,1,1,100.00%,1,0:00:00
+Safari,Windows,1,1,1,100.00%,1,0:00:00
+www.JSMiningStatistics.com [8553504],(not set),1,1,1,100.00%,1,0:00:00
+,,"4,051","3,926","5,396",50.52%,2.5,0:01:35

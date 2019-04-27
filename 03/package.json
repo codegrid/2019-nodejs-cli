@@ -1,0 +1,19 @@
+{
+  "name": "parse-ga-csv",
+  "version": "0.0.1",
+  "description": "",
+  "main": "parse-ga-csv.js",
+  "bin": {
+    "parse-ga-csv": "parse-ga-csv.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "tomof",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.19.0",
+    "js-yaml": "^3.13.1"
+  }
+}
