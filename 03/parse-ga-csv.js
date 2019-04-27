@@ -15,7 +15,7 @@ program
   .option('--format [type]', 'Type of output format', /^(json|yaml)$/, 'json');
 
 program
-  .command('dry-run')
+  .command('preview')
   .description('Output parsed result in console')
   .option('-s, --src <path>', 'Path of the source csv file path')
   .action(options => {
