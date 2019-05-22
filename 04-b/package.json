@@ -1,0 +1,15 @@
+{
+  "name": "04-b",
+  "version": "0.0.1",
+  "description": "",
+  "main": "md-converter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "tomof",
+  "license": "MIT",
+  "dependencies": {
+    "yargs": "^13.2.2"
+  }
+}
