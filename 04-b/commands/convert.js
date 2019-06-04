@@ -21,12 +21,6 @@ exports.builder = yargs => {
       requiresArg: true,
       describe: 'Path of directory to write out converted html',
       type: 'string'
-    },
-    c: {
-      alias: 'config',
-      requiresArg: true,
-      describe: 'Path of the config file',
-      type: 'string'
     }
   })
 };
