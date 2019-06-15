@@ -1,0 +1,21 @@
+{
+  "name": "02-b",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "tomof",
+  "license": "MIT",
+  "dependencies": {
+    "del": "^4.1.1",
+    "express": "^4.17.1",
+    "find-up": "^4.0.0",
+    "globby": "^9.1.0",
+    "handlebars": "^4.1.2",
+    "marked": "^0.6.2",
+    "yargs": "^13.2.2"
+  }
+}
