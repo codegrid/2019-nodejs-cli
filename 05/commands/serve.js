@@ -1,8 +1,8 @@
 const express = require('express');
 
-const cleanDir = require('../lib/clean-dir');
-const convertMdToHtml = require('../lib/convert-md-to-html');
-const writeFileRecursive = require('../lib/write-file-recursive');
+const cleanDir = require('../lib/cleanDir');
+const convertMdToHtml = require('../lib/convertMdToHtml');
+const writeFileRecursive = require('../lib/writeFileRecursive');
 const app = express();
 
 exports.command = 'serve [options]';

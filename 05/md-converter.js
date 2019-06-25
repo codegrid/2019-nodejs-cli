@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const convertAbsolutePath = require('./lib/convert-absolute-path');
-const appConfig = require('./lib/read-config')();
+const convertAbsolutePath = require('./lib/convertAbsolutePath');
+const appConfig = require('./lib/readConfig')();
 
 const argv = require('yargs')
   .commandDir('commands')

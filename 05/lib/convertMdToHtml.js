@@ -3,8 +3,8 @@ const path = require('path');
 const marked = require('marked');
 const handlebars = require('handlebars');
 
-const collectMdFilePaths = require('../lib/collect-md-file-paths');
-const srcPathToDestPath = require('../lib/src-path-to-dest-path');
+const collectMdFilePaths = require('./collectMdFilePaths');
+const srcPathToDestPath = require('./srcPathToDestPath');
 
 const readyTemplate = (templatePath) => {
   const absoluteTemplatePath = path.resolve(process.cwd(), templatePath);
