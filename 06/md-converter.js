@@ -9,9 +9,9 @@ const argv = require('yargs')
   .config(appConfig)
   // パスを指定する各オプション値を絶対パスに変換
   .coerce(['src', 'template', 'dest'], convertAbsolutePath)
-  // ポート番号が数値でなければエラーとする
+  // serveコマンド時にポート番号が数値でなければエラーとする
   .check(argv => {
-    if (isNaN(argv.port)) {
+    if (argv._[0] === 'serve' && isNaN(argv.port)) {
       throw new Error('The specified port number is invalid!')
     }
     return true;
