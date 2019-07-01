@@ -4,6 +4,7 @@ const cleanDir = require('../lib/cleanDir');
 const convertMdToHtml = require('../lib/convertMdToHtml');
 const writeFileRecursive = require('../lib/writeFileRecursive');
 const app = express();
+const logger = require('../lib/logger');
 
 exports.command = 'serve [options]';
 
@@ -53,7 +54,7 @@ exports.handler = async argv => {
   // 事前に出力するディレクトリ内を空にしておく
   await cleanDir(argv.dest);
 
-  console.log('>>> converting files ...');
+  logger.info('>>> converting files ...');
 
   // 変換を実行し、HTML文字列と出力先パス情報を持つオブジェクトリテラルの配列を取得
   const convertedInfoList = await convertMdToHtml(argv.src, argv.dest, argv.template);
@@ -65,7 +66,7 @@ exports.handler = async argv => {
   });
 
   Promise.all(promiseList).then(() => {
-    console.log('<<< done!');
+    logger.info('<<< done!');
 
     // Expressサーバーの立ち上げ
     app.use(express.static(argv.dest));

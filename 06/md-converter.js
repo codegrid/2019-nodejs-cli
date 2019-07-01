@@ -2,6 +2,7 @@
 
 const convertAbsolutePath = require('./lib/convertAbsolutePath');
 const appConfig = require('./lib/readConfig')();
+const logger = require('./lib/logger');
 
 const argv = require('yargs')
   .commandDir('commands')
@@ -17,7 +18,7 @@ const argv = require('yargs')
   })
   // エラーハンドリング
   .fail((msg, err, yargs) => {
-    console.error('[ERROR]', err.message);
+    logger.error('[ERROR]', err.message);
     console.error('You should be doing', yargs.help());
     process.exit(1);
   })
