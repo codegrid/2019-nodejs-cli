@@ -47,6 +47,13 @@ exports.builder = yargs => {
       describe: 'Port of server',
       type: 'number'
     }
+  })
+  // ポート番号が数値でなければエラーとする
+  .check(argv => {
+    if (isNaN(argv.port)) {
+      throw new Error('The specified port number is invalid!')
+    }
+    return true;
   });
 };
 
